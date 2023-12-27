@@ -7,11 +7,11 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 project(
-  CPP_PROJECT_TEMPLATE
+  GEOMETRY
   LANGUAGES CXX
   VERSION 1.0.0
-  DESCRIPTION "C++ Project Template"
-  HOMEPAGE_URL "https://github.com/gksma/cpp_project_template.git"
+  DESCRIPTION "The library for geometry "
+  HOMEPAGE_URL "https://github.com/gksma/geometry.git"
 )
 message(STATUS)
 message(STATUS "Started all process in ${PROJECT_NAME} CMakeLists.txt.")
