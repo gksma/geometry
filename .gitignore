@@ -12,3 +12,6 @@ thirdparty/install/**
 
 # Windows
 .DS_Store
+
+# Documentation
+documents/**
