@@ -13,6 +13,8 @@
 #ifndef GKSMA_GEOMETRY_DISTANCE_HPP_
 #define GKSMA_GEOMETRY_DISTANCE_HPP_
 
+
+
 namespace gksma::geometry {
     /**
      * @brief The class for abstract distance
@@ -27,6 +29,20 @@ namespace gksma::geometry {
             kMicrometer = 4,
             kNanoMeter = 5
         };
+
+        Distance() = default;
+
+        Distance(double input_value, Type input_type = Type::kMeter);
+
+        Distance(const Distance& other) = default;
+        Distance(Distance && other) noexcept = default;
+
+        virtual ~Distance() = default;
+
+        auto operator=(const Distance& other) -> Distance& = default;
+
+        auto operator=(Distance&& other) -> Distance& = default;
+
         protected:
         private:
     }
